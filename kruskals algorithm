@@ -24,7 +24,55 @@ class Graph
     // to src. Both are counted as 1 edge here.  
     Edge* edge;  
 };  
+ class Graph  
+{  
+    public: 
+    // V-> Number of vertices, E-> Number of edges  
+    int V, E;  
   
+    // graph is represented as an array of edges.  
+    // Since the graph is undirected, the edge  
+    // from src to dest is also edge from dest  
+    // to src. Both are counted as 1 edge here.  
+    Edge* edge;  
+};  
+  class Graph  
+{  
+    public: 
+    // V-> Number of vertices, E-> Number of edges  
+    int V, E;  
+  
+    // graph is represented as an array of edges.  
+    // Since the graph is undirected, the edge  
+    // from src to dest is also edge from dest  
+    // to src. Both are counted as 1 edge here.  
+    Edge* edge;  
+};  
+  class Graph  
+{  
+    public: 
+    // V-> Number of vertices, E-> Number of edges  
+    int V, E;  
+  
+    // graph is represented as an array of edges.  
+    // Since the graph is undirected, the edge  
+    // from src to dest is also edge from dest  
+    // to src. Both are counted as 1 edge here.  
+    Edge* edge;  
+};  
+  class Graph  
+{  
+    public: 
+    // V-> Number of vertices, E-> Number of edges  
+    int V, E;  
+  
+    // graph is represented as an array of edges.  
+    // Since the graph is undirected, the edge  
+    // from src to dest is also edge from dest  
+    // to src. Both are counted as 1 edge here.  
+    Edge* edge;  
+};  
+   
 // Creates a graph with V vertices and E edges  
 Graph* createGraph(int V, int E)  
 {  
@@ -71,14 +119,31 @@ void Union(subset subsets[], int x, int y)
     else if (subsets[xroot].rank > subsets[yroot].rank)  
         subsets[yroot].parent = xroot;  
   
-    // If ranks are same, then make one as root and  
-    // increment its rank by one  
-    else
-    {  
-        subsets[yroot].parent = xroot;  
-        subsets[xroot].rank++;  
-    }  
-}  
+   class Graph  
+{  
+    public: 
+    // V-> Number of vertices, E-> Number of edges  
+    int V, E;  
+  
+    // graph is represented as an array of edges.  
+    // Since the graph is undirected, the edge  
+    // from src to dest is also edge from dest  
+    // to src. Both are counted as 1 edge here.  
+    Edge* edge;  
+};  
+  class Graph  
+{  
+    public: 
+    // V-> Number of vertices, E-> Number of edges  
+    int V, E;  
+  
+    // graph is represented as an array of edges.  
+    // Since the graph is undirected, the edge  
+    // from src to dest is also edge from dest  
+    // to src. Both are counted as 1 edge here.  
+    Edge* edge;  
+};  
+  
   
 // Compare two edges according to their weights.  
 // Used in qsort() for sorting an array of edges  
@@ -112,6 +177,33 @@ void KruskalMST(Graph* graph)
         subsets[v].parent = v;  
         subsets[v].rank = 0;  
     }  
+    // Number of edges to be taken is equal to V-1  
+    while (e < V - 1 && i < graph->E)  
+    {  
+        // Step 2: Pick the smallest edge. And increment  
+        // the index for next iteration  
+        Edge next_edge = graph->edge[i++];  
+  
+        int x = find(subsets, next_edge.src);  
+        int y = find(subsets, next_edge.dest);  
+    // Number of edges to be taken is equal to V-1  
+    while (e < V - 1 && i < graph->E)  
+    {  
+        // Step 2: Pick the smallest edge. And increment  
+        // the index for next iteration  
+        Edge next_edge = graph->edge[i++];  
+  
+        int x = find(subsets, next_edge.src);  
+        int y = find(subsets, next_edge.dest);  
+    // Number of edges to be taken is equal to V-1  
+    while (e < V - 1 && i < graph->E)  
+    {  
+        // Step 2: Pick the smallest edge. And increment  
+        // the index for next iteration  
+        Edge next_edge = graph->edge[i++];  
+  
+        int x = find(subsets, next_edge.src);  
+        int y = find(subsets, next_edge.dest);  
   
     // Number of edges to be taken is equal to V-1  
     while (e < V - 1 && i < graph->E)  
